@@ -8,3 +8,4 @@ var -> Hoisting
 a=1;
 b=a;
 print(a);
+okk
