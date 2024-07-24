@@ -6,6 +6,12 @@ var -> Hoisting
 */
 
 a=1;
-b=a;
-print(a);
-okk
+b=2;
+if(a==b)
+{
+    console.log(a);
+}
+else
+{
+    console.log("b is greater");
+}
