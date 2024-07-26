@@ -11,3 +11,6 @@ Operators
 !  ->NOT 
 ==  -> equal value matra herne
 ===  -> equal data type ni herne
+++ -> increment
+-- ->decrement 
++=  -> //a=a+ 10
