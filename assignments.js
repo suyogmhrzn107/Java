@@ -68,7 +68,7 @@ else
 {
     console.log("The number is Prime ");
 }
-}
+} 
 
 4. 1 to 100 all prime numbers.
 let i,j;
@@ -93,12 +93,60 @@ for(i=2;i<100;i++)
         }
 
 }
-      5. First 100 prime numbers  */
+      5. First 100 prime numbers 
 
 let i=1,j,k;
 let flag;
+let count=1;
 
-while(i>=2)
+for(j=2;j<1000;j++)
 {
+    for(k=2;k<j;k++)
+    {
+        if(j%k==0)
+        {
+            flag=0;
+            break;
+        }
+        else{
+            flag=1;
+        }
+    }
+    if(flag==1 && count<=100)
+        {
+            console.log(j);
+            count++;
+        }
     
 }
+
+
+6. fizzbuzz
+
+
+    let a=40;
+    if(a%3==0 && a%5==0)
+    {
+        console.log('fizzbuzz');
+    }
+    else if(a%5==0)
+    {
+        console.log('buzz');
+    }
+    else if(a%3==0)
+    {
+      console.log('fizz');
+    }
+Function
+*/
+
+const fact = (a,f,i) => {
+   
+    for(i=0;i<a;i++)
+    {
+      f=a*(a-1);
+    }
+    return fact(a,f,i);
+}
+
+console.log("factorial =",fact(5));
